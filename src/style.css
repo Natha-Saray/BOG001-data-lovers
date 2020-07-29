@@ -1,381 +1,269 @@
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-} 
-
-body {
-  background: url(Images/background.jpg) no-repeat center center fixed;
-  background-size: cover;
+html {
+	background-color: powderblue;
+	font-size: 16px;
+	font-family: 'Open Sans', sans-serif;
+	color: #525E62;
+}
+.pkmn__card {
+	width: 370px;
+	height: 650px;
+	background: white;
+	margin: 1rem auto;
+	padding: 0.5rem 0;
 }
 
-header { 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  font-family: "VT323", monospace;
-  background: #F32E13;
-  border: 8px solid #D22121;
-    
+.pkmn__container {
+	width: 21rem;
+	height: 39rem;
+	background-image: url("https://i.pinimg.com/originals/ea/1d/5b/ea1d5bb4dc48f7bf0ac30e8596687be7.png");
+	background-size: 100% 100%;
+	margin: 1rem auto;
+	padding-top: 1rem;
+	border-radius: 0.5rem;
 }
 
-#list, #bar {
-  display: none;
+.pkmn__picture {
+	width: 14rem;
+	height: 11.5rem;
+	margin: 0 auto;	
 }
 
-main {
-  font-family: "Share Tech Mono";
+.pkmn__img {
+    margin-top: -1rem;
+    width: 75%;
+    padding: 0 20%;
 }
 
-main button {
-  font-family: "VT323", monospace;
+.pkmn__exp-bar{
+	width: 17rem;
+	height: 17rem;
+	border-style: solid;
+	border-color: white rgba(255, 255, 255, 0.15) transparent white;
+	border-radius: 50%;
+	margin-left: -1.6rem;
+	margin-top: -10.7rem;
+	}
+
+.pkmn__cp {
+	text-align: center;
+	color: white;
 }
 
-.window-2 {
-  display: none;
+span {
+	font-size: 1.5rem;
+}
+.pkmn__info {
+	width: 20rem;
+	background: white;
+	margin: 0 auto;
+	border-radius: 0.5rem;
+	padding: 1.5rem 0 1rem 0;
 }
 
-footer { 
-  width: 100%;
-  font-family: "VT323", monospace;
-  background: #F32E13;
-  border: 5px solid #D22121;
-  color: white;
+.pkmn__name{
+	width: 100%;
+	text-align: center;
+	font-size: 1.5rem;
 }
 
-@media screen and (max-width: 450px) {
+.pkmn__name::before{
+	content: "";
+	width: 12rem;
+	height: 0.5rem;
+	border-radius: 0.5rem;
+	background: #6FEDB8;
+	margin-top: 2.2rem;
+	margin-left: -2.3rem;
+	position: absolute;
 
-  header {
-    height: 11vh;
-  }
-
-  .container {
-      width: 150px;
-  }
-
-  nav {
-      display: flex;
-      align-items: center;
-  }
-
-  #list {
-    display: flex;
-    width: 25px;
-    margin-left: 85%;
-  }
-
-  .home, .pokedex, .versus{
-      width: 30px;
-  } 
-
-  .nav-links {
-      display: none;
-      text-align: left;
-      flex-direction: column;
-  }
-
-  li {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: flex-end;
-      flex-direction: column;
-      list-style: none;
-  }
-
-  a {
-      text-decoration: none;
-      color: black;
-  }
-
-  #Pokemon {
-      width: 20vh;
-  }
-
-  .searchContainer {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-  }
-
-  .search {
-      width: 45%;
-      display: flex;
-      border: none;
-      background: #F32E13
-  }
-
-  .loupe {
-      width: 55%;
-  }
-
-  main .window-1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 50%;
-      margin-left: 25%;
-      height: calc(100vh - 11vh - 7vh);
-  }
-
-  h1 {
-      font-family: Share Tech Mono;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      text-align: justify;
-  }
-
-  .AMB {
-      width: 100%;
-      margin-top: 15%;
-  }
-
-  main button {
-      width: 59%;
-      align-self: center;
-      margin-top: 4%;
-      padding: 4%;
-      background: #FFFFFF;
-      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);;
-      border-radius: 50px;
-  }
-
-  footer {
-      display: flex;
-      height: 7vh;
-      font-size: 14px;
-      line-height: 16px;
-      text-align: center;
-      justify-content: center;
-  }
+}
+.size-medium {
+	font-size: 0.8rem;
+	color: #3F4240;
 }
 
-@media screen and (min-width: 451px) and (max-width: 770px) {
- 
-  header {
-      height: 15vh;
-  }
+.pkmn__data {
+	width: 20rem;
+	height: 2rem;
+	display: flex;
+	justify-content: center;
+	margin-bottom: 0.8rem;
 
-  .container {
-      width: 200px;
-      justify-content: center;
-      align-self: center;
-  }
-
-  nav {
-      display: flex;
-      align-items: center;
-  }
-
-  #list {
-      display: flex;
-      width: 25%;
-  }
-
-  .home, .pokedex, .versus{
-      width: 60px;
-  } 
-
-  .nav-links {
-      display: none;
-      text-align: left;
-      flex-direction: column;
-  }
-
-  li {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: flex-end;
-      flex-direction: column;
-      list-style: none;
-  }
-
-  a {
-      text-decoration: none;
-      color: black;
-  }
-
-  #Pokemon {
-      width: 170px;
-  }
-
-  .searchContainer {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-  }
-
-  .search {
-      width: 35%;
-      display: flex;
-      border: none;
-      background: #F32E13
-  }
-
-  .loupe {
-      width: 50%;
-  }
-
-  main .window-1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 27%;
-      margin-left: 36%;
-      height: calc(100vh - 15vh - 10vh);
-  }
-
-  h1 {
-      font-family: Share Tech Mono;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      text-align: justify;
-  }
-
-  .AMB {
-      width: 100%;
-      margin-top: 15%;
-  }
-
-  main button {
-      width: 59%;
-      align-self: center;
-      margin-top: 4%;
-      padding: 4%;
-      background: #FFFFFF;
-      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);;
-      border-radius: 50px;
-  }
-
-  footer {
-      display: flex;
-      height: 10vh;
-      font-size: 14px;
-      line-height: 16px;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
-  }
+}
+.pkmn__type, .pkmn__weight, .pkmn__height {
+	width: 5.1rem;
+	text-align: center;
+	font-size: 0.9rem;
+	border-right: solid 0.1rem rgba(0, 0, 0, 0.16);
+}
+.pkmn__type {
+	width: 6.8rem;
 }
 
-@media screen and (min-width: 771px) {
+.pkmn__height {
+	border-right: none;
+}
 
-  header {
-      height: 16vh;
-  }
+.pkmn___status {
+	width: 18rem;
+	height: 4rem;
+	display: flex;
+	border-top: solid 0.1rem rgba(0, 0, 0, 0.16);
+	padding-top: 0.8rem;
+	margin: 0 auto 0 auto;
+}
 
-  .container {
-      width: 300px;
-      align-self: center;
-  }
+.text--small {
+	margin-top: 0rem;
+	font-size: 0.7rem;
+	color: #3F4240;
+}
 
-  nav {
-      display: flex;
-      align-items: center;
-  }
+.status__stardust, .status__candy {
+	width: 9rem;
+	text-align: center;
+}
+.status__candy {
+	width: 10rem;
+}
 
-  .home, .pokedex, .versus{
-      width: 40px;
-  } 
+.status__stardust::before, .powerup__stardust::before{
+	content: "";
+	width: 0.25rem;
+	height: 0.7rem;
+	background: #E300FA;
+	position: absolute;
+	margin-left: -0.6rem;
+	border: solid #393939;
+	border-width: 0.4rem 0.1rem 0.2rem 0.1rem;
+}
 
-  .nav-links {
-      display: flex;
-  }
-  
-  li {
-      padding: 0 10px;
-      list-style: none;
-  }
+.status__candy::before, .powerup__candy::before{
+	content: "";
+	width: 1.2rem;
+	height: 1.2rem;
+	background: orange;
+	border-radius: 50%;
+	position: absolute;
+	margin-left: -1.4rem;
+	margin-top: 0.18rem;
+}
 
-  a {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      text-decoration: none;
-      color: black;
-      font-size: 30px;
-  }
+.pkmn__powerup {
+	width: 18rem;
+	margin: 0 auto;
+	text-align: center;
+	display: flex;
+	background: #E8F0E1;
+	border-radius: 2rem 0.3rem 0.3rem 2rem;
+}
 
-  #Pokemon {
-      width: 300px;
-      
-  }
+.nomtop {
+	margin-top: 0.2rem;
+	font-size: 0.7rem;
+	color: #3F4240;	
+}
 
-  .searchContainer {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-  }
+.powerup__text {
+	width: 8rem;
+	height: 2rem;
+	padding-top: 0.5rem;
+	background: #64D39F;
+	border-radius: 2rem;
+	margin-right: 2rem;
+	color: white;
+}
 
-  #bar {
-      display: inline-block;
-  }
+.powerup__stardust, .powerup__candy {
+	width: 3.5rem;
+	padding-top: 0.6rem;
+	font-size: 0.9rem;
+}
 
-  input {
-      border-radius: 15px;
-      padding: 4%;
-  }
+.powerup__candy::before {
+	width: 1rem;
+	height: 1rem;
+}
 
-  .search {
-      width: 45px;
-      border: none;
-      background: #F32E13
-  }
+.powerup__stardust::before {
+	height: 0.6rem;
+}
 
-  .loupe {
-      width: 61%;
-  }
+.pkmn__move{
+	width: 17rem;
+	margin: 0 auto 0 auto;
+	
+	display: flex;
+	justify-content: space-between;
+}
+.move__special::before {
+	content: '';
+	width: 6rem;
+	height: 0.5rem;
+	position: absolute;
+	background: #66B8FA;
+	margin-top: 0.37rem;
+	margin-left: 7rem;
+	border: solid 0.12rem #B8C9FF;
+	border-radius: 0.4rem;
+}
 
-  main .window-1 {
-      width: 95%;
-      display: grid;
-      position: relative;
-      padding-left: 15%;
-      height: calc(100vh - 16vh - 7vh);
-      max-width: 1000px;
-      grid-template-columns: repeat(4, 1fr);
-  }
+.move--mtop {
+	margin-top: 0;
+	color: #B2B6B4;
+	margin-bottom: 0.5rem;
+}
 
-  h1 {
-      grid-column: span 2;
-      padding: 135px 0px;
-      padding-right: 86px;
-      font-family: Share Tech Mono;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 26px;
-      text-align: justify;
-      align-self: center;
-  }
+.space{
+	margin-top: 1.2rem;
+	padding-top: 1.2rem;
+	border-top: solid 0.1rem rgba(0, 0, 0, 0.16);
+}
 
-  .AMB {
-      display: flex;
-      grid-column: span 2;
-      grid-row: span 2;
-      align-self: center;
-      width: 70%;
-  }
+/* pseudo elementos: before - after*/
+.pokeball {
+	position: absolute;
+	width: 10rem;
+	height: 10rem;
+	background: white;
+	border-radius: 50%;
+}
 
-  main button {
-      width: 60%;
-      position: absolute;
-      grid-column-start: 1;
-      grid-column-end: 2;
-      top: 58%;
-      margin-left: 46%;
-      padding: 5%;
-      background: #FFFFFF;
-      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);;
-      border-radius: 50px;
-  }
+.pokeball::before {
+	content: "";
+	width: 10rem;
+	height: 5rem;
+	background: #FF1C1C;
+	border-radius: 5rem 5rem 0 0;
+	position: absolute;
+}
 
-   footer {
-      display: flex;
-      height: 7vh;
-      font-size: 14px;
-      line-height: 16px;
-      justify-content: center;
-      text-align: center;
-  }
+.detail {
+	width: 10rem;
+	height: 0.5rem;
+	background: #333;
+	margin-top: 4.8rem;
+	position: absolute;
+}
+
+.detail::before {
+	content: "";
+	width: 3rem;
+	height: 3rem;
+	background: #333;
+	border-radius :50%;
+	position: absolute;
+	margin-top: -1.1rem;
+	margin-left: 3.5rem;
+}
+
+.detail::after {
+	content: "";
+	width: 1.8rem;
+	height:1.8rem;
+	background: #FFF;
+	border-radius: 50%;
+	margin-top: -0.5rem;
+	margin-left: 4.1rem;
+	position: absolute;
 }
