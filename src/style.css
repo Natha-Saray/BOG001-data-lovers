@@ -1,30 +1,31 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-} 
+}
 
 body {
   background: url(Images/background.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
-header { 
+header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   font-family: "VT323", monospace;
   background: #F32E13;
   border: 8px solid #D22121;
-    
+
 }
 
-#list, #bar {
+#list,
+#bar {
   display: none;
 }
 
 main {
-  font-family: "Share Tech Mono";
+  font-family: 'Share Tech Mono', monospace;
 }
 
 main button {
@@ -40,7 +41,7 @@ main button {
   overflow: scroll;
 }
 
-footer { 
+footer {
   width: 100%;
   font-family: "VT323", monospace;
   background: #F32E13;
@@ -55,12 +56,12 @@ footer {
   }
 
   .container {
-      width: 150px;
+    width: 150px;
   }
 
   nav {
-      display: flex;
-      align-items: center;
+    display: flex;
+    align-items: center;
   }
 
   #list {
@@ -69,405 +70,501 @@ footer {
     margin-left: 85%;
   }
 
-  .home, .pokedex, .versus{
-      width: 30px;
-  } 
+  .home,
+  .pokedex,
+  .versus {
+    width: 30px;
+  }
 
   .nav-links {
-      display: block;
-      text-align: left;
-      flex-direction: column;
-      transition: all 0.5s;
+    display: block;
+    text-align: left;
+    flex-direction: column;
+    transition: all 0.5s;
+    width: 100%;
   }
 
   li {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: flex-end;
-      flex-direction: column;
-      list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    flex-direction: column;
+    list-style: none;
   }
 
   a {
-      text-decoration: none;
-      color: black;
+    text-decoration: none;
+    color: black;
   }
 
   #Pokemon {
-      width: 20vh;
+    width: 20vh;
   }
 
   .searchContainer {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   .search {
-      width: 45%;
-      display: flex;
-      border: none;
-      background: #F32E13
+    width: 45%;
+    display: flex;
+    border: none;
+    background: #F32E13
   }
 
   .loupe {
-      width: 55%;
+    width: 55%;
   }
 
   main .window-1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 50%;
-      margin-left: 25%;
-      height: calc(100vh - 11vh - 7vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-left: 25%;
+    height: calc(100vh - 11vh - 7vh);
   }
 
   h1 {
-      font-family: Share Tech Mono;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      text-align: justify;
+    font-family: 'Share Tech Mono', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: justify;
   }
 
   .AMB {
-      width: 100%;
-      margin-top: 15%;
+    width: 100%;
+    margin-top: 15%;
   }
 
   .continue {
-      width: 59%;
-      align-self: center;
-      margin-top: 4%;
-      padding: 4%;
-      background: #FFFFFF;
-      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);;
-      border-radius: 50px;
+    width: 59%;
+    align-self: center;
+    margin-top: 4%;
+    padding: 4%;
+    background: #FFFFFF;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    ;
+    border-radius: 50px;
   }
 
   main .window-2 {
-      height: calc(100vh - 11vh - 7vh);
+    height: calc(100vh - 11vh - 7vh);
   }
 
   .btn-filter {
-      display: flex;
-      justify-content: space-evenly;
+    display: flex;
+    justify-content: space-evenly;
   }
 
   .Filter {
-      width: 35%;
-      display: inline-flex;
-      justify-content: center;
-      margin-top: 4%;
-      padding: 2%;
-      background: rgba(243, 46, 19, 0.7);
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border: 1px solid rgba(0, 0, 0, 0.85);
-      border-radius: 20px;
+    width: 35%;
+    display: inline-flex;
+    justify-content: center;
+    margin-top: 4%;
+    padding: 2%;
+    background: rgba(243, 46, 19, 0.7);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid rgba(0, 0, 0, 0.85);
+    border-radius: 20px;
+    font-family: "VT323", monospace;
   }
 
   .window-container {
-      display: flex;
-      flex-flow: wrap;
-      justify-content: space-evenly;
-      padding: 5%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    padding: 5%;
   }
 
   footer {
-      display: flex;
-      height: 7vh;
-      font-size: 14px;
-      line-height: 16px;
-      text-align: center;
-      justify-content: center;
+    display: flex;
+    height: 7vh;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    justify-content: center;
   }
 }
 
 @media screen and (min-width: 451px) and (max-width: 770px) {
- 
+
   header {
-      height: 15vh;
+    height: 15vh;
   }
 
   .container {
-      width: 200px;
-      justify-content: center;
-      align-self: center;
+    width: 200px;
+    justify-content: center;
+    align-self: center;
   }
 
   nav {
-      display: flex;
-      align-items: center;
+    display: none;
+    align-items: center;
   }
 
   #list {
-      display: flex;
-      width: 25%;
+    display: flex;
+    width: 25%;
+    margin: 10px;
   }
 
-  .home, .pokedex, .versus{
-      width: 60px;
-  } 
+  .home,
+  .pokedex,
+  .versus {
+    width: 60px;
+  }
 
   .nav-links {
-      display: none;
-      text-align: left;
-      flex-direction: column;
+    display: none;
+    text-align: left;
+    flex-direction: column;
+    position: absolute;
+    transition: all 0.5s;
+    width: 100%;
   }
 
   li {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: flex-end;
-      flex-direction: column;
-      list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    flex-direction: column;
+    list-style: none;
   }
 
   a {
-      text-decoration: none;
-      color: black;
+    text-decoration: none;
+    color: black;
   }
 
   #Pokemon {
-      width: 170px;
+    width: 170px;
   }
 
   .searchContainer {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   .search {
-      width: 35%;
-      display: flex;
-      border: none;
-      background: #F32E13
+    width: 35%;
+    display: flex;
+    border: none;
+    background: #F32E13
   }
 
   .loupe {
-      width: 50%;
+    width: 50%;
   }
 
   main .window-1 {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      width: 27%;
-      margin-left: 36%;
-      height: calc(100vh - 15vh - 10vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 27%;
+    margin-left: 36%;
+    height: calc(100vh - 15vh - 10vh);
   }
 
   h1 {
-      font-family: Share Tech Mono;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 14px;
-      text-align: justify;
+    font-family: 'Share Tech Mono', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: justify;
   }
 
   .AMB {
-      width: 100%;
-      margin-top: 15%;
+    width: 100%;
+    margin-top: 15%;
   }
 
   .continue {
-      width: 59%;
-      align-self: center;
-      margin-top: 4%;
-      padding: 4%;
-      background: #FFFFFF;
-      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);;
-      border-radius: 50px;
+    width: 59%;
+    align-self: center;
+    margin-top: 4%;
+    padding: 4%;
+    background: #FFFFFF;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    ;
+    border-radius: 50px;
   }
 
   main .window-2 {
-      height: calc(100vh - 15vh - 10vh);
+    height: calc(100vh - 15vh - 10vh);
   }
 
-  .btn-filter {
-      display: flex;
-      justify-content: space-evenly;
+  /* .btn-filter {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .Filter {
+        width: 100%;
+        display: inline-flex;
+        justify-content: center;
+        margin-top: 4%;
+        padding: 2%;
+        background: rgba(243, 46, 19, 0.7);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(0, 0, 0, 0.85);
+        border-radius: 50px;
+        font-family: "VT323", monospace;
+         #F32E13 
+    } */
+
+  .table-box {
+    margin: 35px;
   }
 
-  .Filter {
-      width: 35%;
-      display: inline-flex;
-      justify-content: center;
-      margin-top: 4%;
-      padding: 2%;
-      background: rgba(243, 46, 19, 0.7);
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border: 1px solid rgba(0, 0, 0, 0.85);
-      border-radius: 50px;
+  .table-row {
+    display: table;
+    width: 20%;
+    /* margin: 5px auto; */
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 2px;
+    background: rgba(243, 46, 19, 0.7);
+    padding: 4px;
+    color: black;
+    font-size: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0.5px solid rgba(0, 0, 0, 0.85);
+  }
+
+  .table-head {
+    background: rgba(243, 46, 19, 0.7);
+    border: 0.5px solid rgba(0, 0, 0, 0.85);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: black;
+    font-family: "VT323", monospace;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+
+  .table-cell {
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    padding: 4px 0;
   }
 
   .window-container {
-      display: flex;
-      flex-flow: wrap;
-      justify-content: space-evenly;
-      padding: 5%;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    padding: 5%;
   }
 
   footer {
-      display: flex;
-      height: 10vh;
-      font-size: 14px;
-      line-height: 16px;
-      text-align: center;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    height: 10vh;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
   }
 }
 
 @media screen and (min-width: 771px) {
 
   header {
-      height: 16vh;
+    height: 16vh;
   }
 
   .container {
-      width: 300px;
-      align-self: center;
+    width: 300px;
+    align-self: center;
   }
 
   nav {
-      display: flex;
-      align-items: center;
+    display: flex;
+    align-items: center;
   }
 
-  .home, .pokedex, .versus{
-      width: 40px;
-  } 
+  .home,
+  .pokedex,
+  .versus {
+    width: 35px;
+  }
 
   .nav-links {
-      display: flex;
+    display: none;
   }
-  
+
   li {
-      padding: 0 10px;
-      list-style: none;
+    padding: 0 10px;
+    list-style: none;
   }
 
   a {
-      display: flex;
-      align-items: center;
-      flex-direction: column;
-      text-decoration: none;
-      color: black;
-      font-size: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    color: black;
+    font-size: 30px;
   }
 
   #Pokemon {
-      width: 300px;
-      
+    width: 300px;
+
   }
 
   .searchContainer {
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
 
   #bar {
-      display: inline-block;
+    display: inline-block;
   }
 
   input {
-      border-radius: 15px;
-      padding: 4%;
+    border-radius: 15px;
+    padding: 4%;
   }
 
   .search {
-      width: 45px;
-      border: none;
-      background: #F32E13
+    width: 45px;
+    border: none;
+    background: #F32E13
   }
 
   .loupe {
-      width: 61%;
+    width: 61%;
   }
 
   main .window-1 {
-      width: 95%;
-      display: grid;
-      position: relative;
-      padding-left: 15%;
-      height: calc(100vh - 16vh - 7vh);
-      max-width: 2000px;
-      grid-template-columns: repeat(4, 1fr);
+    width: 95%;
+    display: grid;
+    position: relative;
+    padding-left: 15%;
+    height: calc(100vh - 16vh - 7vh);
+    max-width: 2000px;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   h1 {
-      grid-column: span 2;
-      padding: 135px 0px;
-      padding-right: 86px;
-      font-family: Share Tech Mono;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 26px;
-      text-align: justify;
-      align-self: center;
+    grid-column: span 2;
+    padding: 135px 0px;
+    padding-right: 86px;
+    font-family: 'Share Tech Mono', monospace;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    text-align: justify;
+    align-self: center;
   }
 
   .AMB {
-      display: flex;
-      grid-column: span 2;
-      grid-row: span 2;
-      align-self: center;
-      width: 70%;
+    display: flex;
+    grid-column: span 2;
+    grid-row: span 2;
+    align-self: center;
+    width: 70%;
   }
 
   .continue {
-      width: 60%;
-      position: absolute;
-      grid-column-start: 1;
-      grid-column-end: 2;
-      top: 58%;
-      margin-left: 46%;
-      padding: 5%;
-      background: #FFFFFF;
-      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);;
-      border-radius: 50px;
+    width: 60%;
+    position: absolute;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    top: 58%;
+    margin-left: 46%;
+    padding: 5%;
+    background: #FFFFFF;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    ;
+    border-radius: 50px;
   }
 
   main .window-2 {
-      height: calc(100vh - 16vh - 7vh);
+    height: calc(100vh - 16vh - 7vh);
   }
 
-  .btn-filter{
-      display: flex;
-      flex-flow: column;
-      justify-content: space-evenly;
+  /* .btn-filter{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+    }
+
+    .Filter {
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        padding: 0.5%;
+        background: rgba(243, 46, 19, 0.7);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(0, 0, 0, 0.85);
+        border-radius: 20px;
+        font-family: "VT323", monospace;
+        font-size: 20px;
+    } */
+
+  .table-box {
+    margin: 35px;
   }
 
-  .Filter {
-      width: 10%;
-      display: flex;
-      justify-content: center;
-      padding: 0.5%;
-      background: rgba(243, 46, 19, 0.7);
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-      border: 1px solid rgba(0, 0, 0, 0.85);
-      border-radius: 20px;
+  .table-row {
+    display: table;
+    width: 20%;
+    /* margin: 5px auto; */
+    font-family: 'Share Tech Mono', monospace;
+    letter-spacing: 2px;
+    background: rgba(243, 46, 19, 0.7);
+    padding: 4px 0;
+    color: black;
+    font-size: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 0.5px solid rgba(0, 0, 0, 0.85);
+  }
+
+  .table-head {
+    background: rgba(243, 46, 19, 0.7);
+    border: 0.5px solid rgba(0, 0, 0, 0.85);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: black;
+    font-family: "VT323", monospace;
+    font-weight: 600;
+    letter-spacing: 3px;
+  }
+
+  .table-cell {
+    display: table-cell;
+    width: 20%;
+    text-align: center;
+    padding: 4px 0;
   }
 
   .window-container {
-      display: flex;
-      flex-flow: wrap;
-      justify-content: space-evenly;
-      margin-right: 5%;
-      margin-left: 20%;
-
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    margin-right: 5%;
+    margin-left: 20%;
   }
 
-   footer {
-      display: flex;
-      height: 7vh;
-      font-size: 14px;
-      line-height: 16px;
-      justify-content: center;
-      text-align: center;
+  footer {
+    display: flex;
+    height: 7vh;
+    font-size: 14px;
+    line-height: 16px;
+    justify-content: center;
+    text-align: center;
+  }
+
+.window-container .card {
+    background: #C6E2F2;
+    width: 15%;
+    text-align: center;
+    border-radius: 10px;
   }
 }

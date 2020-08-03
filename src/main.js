@@ -27,7 +27,6 @@ let result;
 for (result of dataSet) {
   document.getElementById(
     "window-container"
-  ).innerHTML += `<div class="card"><h2> ${result.num} </h2><p> ${
-    result.name
-  } </p><br><img src=${result.img}><div>`;
+  ).innerHTML += `<div class="card"><h2> #${result.num} </h2><p> ${result.name} </p><br><img src=${result.img}><div>`;
 }
+
