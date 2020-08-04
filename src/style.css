@@ -41,6 +41,12 @@ main button {
   overflow: scroll;
 }
 
+.card {
+  background: #C6E2F2;
+  text-align: center;
+  border-radius: 10px;
+}
+
 footer {
   width: 100%;
   font-family: "VT323", monospace;
@@ -147,7 +153,6 @@ footer {
     padding: 4%;
     background: #FFFFFF;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    ;
     border-radius: 50px;
   }
 
@@ -160,7 +165,7 @@ footer {
     justify-content: space-evenly;
   }
 
-  .Filter {
+  .Filter select {
     width: 35%;
     display: inline-flex;
     justify-content: center;
@@ -180,6 +185,11 @@ footer {
     padding: 5%;
   }
 
+  .card {
+    width: 40%;
+    margin: 2%;
+  }
+
   footer {
     display: flex;
     height: 7vh;
@@ -187,13 +197,6 @@ footer {
     line-height: 16px;
     text-align: center;
     justify-content: center;
-  }
-
-  .card {
-    background: #C6E2F2;
-    width: 15%;
-    text-align: center;
-    border-radius: 10px;
   }
 }
 
@@ -298,7 +301,6 @@ footer {
     padding: 4%;
     background: #FFFFFF;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    ;
     border-radius: 50px;
   }
 
@@ -306,12 +308,12 @@ footer {
     height: calc(100vh - 15vh - 10vh);
   }
 
-  /* .btn-filter {
+  .btn-filter {
         display: flex;
         justify-content: space-evenly;
     }
 
-    .Filter {
+    .Filter select {
         width: 100%;
         display: inline-flex;
         justify-content: center;
@@ -322,50 +324,19 @@ footer {
         border: 1px solid rgba(0, 0, 0, 0.85);
         border-radius: 50px;
         font-family: "VT323", monospace;
-         #F32E13 
-    } */
-
-  .table-box {
-    margin: 35px;
-  }
-
-  .table-row {
-    display: table;
-    width: 15%;
-    /* margin: 5px auto; */
-    font-family: 'Share Tech Mono', monospace;
-    letter-spacing: 2px;
-    background: rgba(243, 46, 19, 0.7);
-    padding: 4px;
-    color: black;
-    font-size: 16px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: 0.5px solid rgba(0, 0, 0, 0.85);
-  }
-
-  .table-head {
-    background: rgba(243, 46, 19, 0.7);
-    border: 0.5px solid rgba(0, 0, 0, 0.85);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color: black;
-    font-family: "VT323", monospace;
-    font-size: 20px;
-    font-weight: 600;
-    letter-spacing: 3px;
-  }
-
-  .table-cell {
-    display: table-cell;
-    width: 18%;
-    text-align: center;
-    padding: 4px 0;
-  }
+    }
 
   .window-container {
     display: flex;
     flex-flow: wrap;
     justify-content: space-evenly;
     padding: 5%;
+    height: 89;
+  }
+
+  .card {
+    width: 15%;
+    margin: 1%;;
   }
 
   footer {
@@ -377,13 +348,6 @@ footer {
     justify-content: center;
     align-items: center;
   }
-  .card {
-    background: #C6E2F2;
-    width: 15%;
-    text-align: center;
-    border-radius: 10px;
-  }
-
 }
 
 @media screen and (min-width: 771px) {
@@ -496,7 +460,6 @@ footer {
     padding: 5%;
     background: #FFFFFF;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    ;
     border-radius: 50px;
   }
 
@@ -504,59 +467,35 @@ footer {
     height: calc(100vh - 16vh - 7vh);
   }
 
-  /* .btn-filter{
+  .btn-filter {
+        position: absolute;
+        margin-top: 10px;
         display: flex;
         flex-flow: column;
         justify-content: space-evenly;
+        padding: 5%;
     }
 
     .Filter {
-        width: 10%;
-        display: flex;
-        justify-content: center;
-        padding: 0.5%;
         background: rgba(243, 46, 19, 0.7);
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border: 1px solid rgba(0, 0, 0, 0.85);
         border-radius: 20px;
         font-family: "VT323", monospace;
-        font-size: 20px;
-    } */
+        font-size: 22px;
+    }
 
-  .table-box {
-    margin: 35px;
-  }
+    #aZ {
+      margin-top: 20%;
+      padding: 2%;
+      text-align-last: center;
+    }
 
-  .table-row {
-    display: table;
-    width: 15%;
-    /* margin: 5px auto; */
-    font-family: 'Share Tech Mono', monospace;
-    letter-spacing: 2px;
-    background: rgba(243, 46, 19, 0.7);
-    padding: 4px 0;
-    color: black;
-    font-size: 16px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: 0.5px solid rgba(0, 0, 0, 0.85);
-  }
-
-  .table-head {
-    background: rgba(243, 46, 19, 0.7);
-    border: 0.5px solid rgba(0, 0, 0, 0.85);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    color: black;
-    font-family: "VT323", monospace;
-    font-weight: 600;
-    letter-spacing: 3px;
-  }
-
-  .table-cell {
-    display: table-cell;
-    width: 18%;
-    text-align: center;
-    padding: 4px 0;
-  }
+    #element {
+      margin-top: 85%;
+     padding: 2%;
+     text-align-last: center;
+    }
 
   .window-container {
     display: flex;
@@ -564,6 +503,12 @@ footer {
     justify-content: space-evenly;
     margin-right: 5%;
     margin-left: 20%;
+    height: 100%;
+  }
+
+  .card {
+    width: 18%;
+    margin: 1%;
   }
 
   footer {
@@ -573,12 +518,5 @@ footer {
     line-height: 16px;
     justify-content: center;
     text-align: center;
-  }
-
-.card {
-    background: #C6E2F2;
-    width: 15%;
-    text-align: center;
-    border-radius: 10px;
   }
 }
