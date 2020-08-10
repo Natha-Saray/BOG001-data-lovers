@@ -2,7 +2,7 @@
 
 ## -Pokemon Dex-
 
-<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89741008-561b6c80-da53-11ea-97b3-417eb44be50b.png" width="100"> </p>
+<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89741008-561b6c80-da53-11ea-97b3-417eb44be50b.png" width="1000"> </p>
 
 ## Índice
 
@@ -46,24 +46,24 @@ Para entender mejor qué necesidades complementarias a la app Pokémon GO tienen
 
 * vista Pc - desktop:
 
-<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744076-1e222280-da6f-11ea-8097-5de9d638f8bd.jpg" width="300"> </p>
-<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744089-46aa1c80-da6f-11ea-81a9-5c70849390d5.jpg" width="300"> </p>
+<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744076-1e222280-da6f-11ea-8097-5de9d638f8bd.jpg" width="200"> </p>
+<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744089-46aa1c80-da6f-11ea-81a9-5c70849390d5.jpg" width="200"> </p>
 
 * vista dispositivos móviles:
 
-<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744108-7f49f600-da6f-11ea-94dd-b52548cb5659.jpg" width="300"> </p>
+<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744108-7f49f600-da6f-11ea-94dd-b52548cb5659.jpg" width="200"> </p>
 
 ### Alta fidelidad 
 
 * Vista Pc:
 
-<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744469-cdacc400-da72-11ea-9274-a1f168efe72b.png" width="200"> </p>
+<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744469-cdacc400-da72-11ea-9274-a1f168efe72b.png" width="400"> </p>
 
-<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744473-d69d9580-da72-11ea-93cf-55d0433f5d5f.png" width="200"> </p>
+<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744473-d69d9580-da72-11ea-93cf-55d0433f5d5f.png" width="400"> </p>
 
-<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744478-e1f0c100-da72-11ea-8715-7e913d39c077.png" width="200"> </p>
+<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744478-e1f0c100-da72-11ea-8715-7e913d39c077.png" width="400"> </p>
 
-<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744479-e87f3880-da72-11ea-81b4-aec984a81a1f.png" width="200"> </p>
+<p align="center"> <img src="https://user-images.githubusercontent.com/56327014/89744479-e87f3880-da72-11ea-81b4-aec984a81a1f.png" width="400"> </p>
 
 * Vista para móvil:
 
