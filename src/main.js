@@ -7,6 +7,9 @@
 
 import { orderSort } from "./data.js";
 
+import { pokemonTypes } from "./data.js";
+// import { filterType } from "./data.js";
+
 // EVENTOS
 
 // import { example } from './data.js';
@@ -105,3 +108,6 @@ typeBtn.addEventListener("change", (event) => {
 //       pintarpokemones(za);
 //       console.log(pintarpokemones)
 // }
+
+// const typeFilter = document.getElementById("orderElement");
+// typeFilter.addEventListener("change", filterType)
