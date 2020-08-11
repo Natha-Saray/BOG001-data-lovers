@@ -1,11 +1,7 @@
 import { orderSort } from "./data.js";
 
 import { pokemonTypes } from "./data.js";
-// import { filterType } from "./data.js";
 
-// EVENTOS
-
-// import { example } from './data.js';
 
 import data from "./data/pokemon/pokemon.js";
 
