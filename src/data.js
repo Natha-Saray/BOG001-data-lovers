@@ -1,5 +1,3 @@
-
-
 export const orderSort = (setData, order) => {
   let sorting = setData.sort(function (a, z) {
     if (a.name > z.name) {
@@ -14,9 +12,7 @@ export const orderSort = (setData, order) => {
   return sorting;
 };
 
-
 export const pokemonTypes = (setData, orderType) => {
-  // console.log(orderType)
   let filtering = setData.filter((pokemon) => {
     const tiposArr = pokemon.type;
     return tiposArr.includes(orderType);
