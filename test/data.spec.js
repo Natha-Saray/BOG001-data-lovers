@@ -1,5 +1,8 @@
 import { example, anotherExample } from '../src/data.js';
 
+import { orderSort } from "./data.js";
+
+
 
 describe('example', () => {
   it('is a function', () => {

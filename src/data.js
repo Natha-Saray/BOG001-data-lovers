@@ -45,53 +45,59 @@ export const orderSort = (setData, order) => {
 // }
 
 export const pokemonTypes = (setData, orderType) => {
-	let filtering = setData.filter((type) => {		
-		switch (orderType) {
-			case "grass":
-				"grass".type === "Grass";
-				break;
-			case "poison":
-				"poison".type === "Poison";
-				break;
-			case "fire":
-				"fire".type === "Fire";
-				break;
-			case "flying":
-				"flying".type === "Flying";
-				break;
-			case "water":
-				"water".type === "Water";
-				break;
-			case "bug":
-				"bug".type === "Bug";
-				break;
-			case "fighting":
-				"fighting".type === "Fighting";
-				break;
-			case "electric":
-				"electric".type === "Electric";
-				break;
-			case "ice":
-				"ice".type === "Ice";
-				break;
-			case "psychic":
-				"psychic".type === "Psychic";
-				break;
-			case "ground":
-				"ground".type === "Ground";
-				break;
-			case "rock":
-				"rock".type === "Rock";
-				break;
-			case "dragon":
-				"dragon".type === "Dragon";
-				break;
-			case "ghost":
-				"ghost".type === "Ghost"; 
-				break;
-			default:
-				"grass".type === "Grass";
-		}
+	// console.log(orderType)
+	let filtering = setData.filter((pokemon) => {		
+		
+
+	const tiposArr = pokemon.type
+	return (tiposArr.includes(orderType));
+		// switch (orderType) {
+		// 	case "grass":
+		// 		"grass".type === "Grass";
+		// 		break;
+		// 	case "poison":
+		// 		"poison".type === "Poison";
+		// 		break;
+		// 	case "fire":
+		// 		"fire".type === "Fire";
+		// 		break;
+		// 	case "flying":
+		// 		"flying".type === "Flying";
+		// 		break;
+		// 	case "water":
+		// 		"water".type === "Water";
+		// 		break;
+		// 	case "bug":
+		// 		"bug".type === "Bug";
+		// 		break;
+		// 	case "fighting":
+		// 		"fighting".type === "Fighting";
+		// 		break;
+		// 	case "electric":
+		// 		"electric".type === "Electric";
+		// 		break;
+		// 	case "ice":
+		// 		"ice".type === "Ice";
+		// 		break;
+		// 	case "psychic":
+		// 		"psychic".type === "Psychic";
+		// 		break;
+		// 	case "ground":
+		// 		"ground".type === "Ground";
+		// 		break;
+		// 	case "rock":
+		// 		"rock".type === "Rock";
+		// 		break;
+		// 	case "dragon":
+		// 		"dragon".type === "Dragon";
+		// 		break;
+		// 	case "ghost":
+		// 		"ghost".type === "Ghost"; 
+		// 		break;
+		// 	default:
+		// 		"grass".type === "Grass";
+		// }
 
 	})
+	return filtering;
 }
